@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { LiList, ButtonDel } from './ContactItem.styled';
 
 const ContactItem = ({ name, number, onDeleteContact }) => (
-  <li>
+  <LiList>
     {name}: {number}
-    <button type="button" onClick={onDeleteContact}>
+    <ButtonDel type="button" onClick={onDeleteContact}>
       Delete
-    </button>
-  </li>
+    </ButtonDel>
+  </LiList>
 
 );
 
